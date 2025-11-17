@@ -35,20 +35,15 @@
         
         /* --- BLOC 1 : Puzzle --- */
         .puzzle-container {
-            /* background-color: #ffffff; <-- Ancien */
-
-            /* NOUVEAU : Fond bois */
-            background-color: #3a2e28; /* Secours si l'image ne charge pas */
-            background-image: url('bois.jpeg');
+            background-color: #3a2e28;
+            background-image: url('bois.jpg');
             background-size: cover;
             background-position: center;
-
-            /* TRÈS IMPORTANT : Texte clair */
             color: #f5f5f5;
-
             border-radius: 12px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
-            padding: 2rem 2.5rem;
+            /* --- MODIFICATION ICI --- */
+            padding: 2rem 3rem; /* 3rem sur les côtés au lieu de 2.5rem */
             width: 100%;
             max-width: 600px;
             text-align: center;
@@ -57,20 +52,15 @@
         
         /* --- NOUVEAU : BLOC 2 : Indices --- */
         .hint-container {
-            /* background-color: #ffffff; <-- Ancien */
-
-            /* NOUVEAU : Fond bois */
-            background-color: #3a2e28; /* Secours si l'image ne charge pas */
-            background-image: url('bois.jpeg');
+            background-color: #3a2e28;
+            background-image: url('bois.jpg');
             background-size: cover;
             background-position: center;
-
-            /* TRÈS IMPORTANT : Texte clair */
             color: #f5f5f5;
-
             border-radius: 12px;
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
-            padding: 2rem 2.5rem;
+            /* --- MODIFICATION ICI --- */
+            padding: 2rem 3rem; /* 3rem sur les côtés au lieu de 2.5rem */
             width: 100%;
             max-width: 600px;
             box-sizing: border-box;
@@ -139,7 +129,20 @@
         .hint-explanation-box.visible { display: block; opacity: 1; }
 
         .answer-grid { display: flex; justify-content: center; gap: 5px; margin-bottom: 1rem; }
-        .letter-input { width: 45px; height: 45px; font-size: 1.8rem; font-weight: bold; text-align: center; text-transform: uppercase; border: 2px solid #ccc; border-radius: 5px; outline: none; transition: border-color 0.2s, background-color 0.2s; background-color: #fff; }
+        .letter-input {
+            /* --- MODIFICATION ICI --- */
+            width: 38px;  /* Taille générale réduite (au lieu de 45px) */
+            height: 38px;
+            font-size: 1.5rem; /* Police réduite en conséquence */
+
+            text-align: center;
+            text-transform: uppercase;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.2s, background-color 0.2s;
+            background-color: #fff;
+        }
         .letter-input:focus { border-color: #3498db; box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2); }
         .letter-input.revealed { background-color: #e6f7ff; color: #3498db; border-color: #a0d0ee; }
         .letter-input.correct-final { border-color: #2ecc71; background-color: #e6ffe6; color: #2ecc71; }
@@ -171,6 +174,25 @@
         .explanation-section p { font-size: 1rem; line-height: 1.5; margin-bottom: 0; }
         
         .hint-count { font-size: 0.9rem; font-weight: 600; color: #555; background-color: #e0f0ff; padding: 0.5rem 1rem; border-radius: 6px; margin-top: 1rem; border: 1px solid #cceeff; }
+
+        @media (max-width: 480px) { 
+
+            /* Sur mobile, on réduit les marges des blocs */
+            .puzzle-container,
+            .hint-container {
+                padding: 1.5rem; /* Marges égales et plus petites */
+            }
+
+            /* Et on réduit les cases pour qu'elles rentrent */
+            .letter-input {
+                width: 32px;
+                height: 32px;
+                font-size: 1.3rem;
+            }
+            .answer-grid {
+                gap: 3px;
+            }
+        }
 
     </style>
 </head>
