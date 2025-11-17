@@ -3,10 +3,10 @@
 
 const puzzleDuJour = {
     // 1. La réponse
-    correctAnswser: "BELIERRRRRRRRRR",
+    correctAnswser: "BELIER",
     
     // 2. La longueur (pour affichage)
-    clueLength: "(15)",
+    clueLength: "(6)",
     
     // 3. L'explication finale (après avoir trouvé la réponse)
     finalExplanation: "Booba, de son prenom ELIE se retrouve au (dans le) Brésil (BR)",
