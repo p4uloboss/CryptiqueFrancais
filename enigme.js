@@ -13,10 +13,10 @@ const puzzleDuJour = {
 
     // 4. La structure de l'indice
     clueStructure: [
-        { text: "Booba", type: "source" },
-        { text: "au", type: "indicateur" },
-        { text: "Brésil", type: "source" },
-        { text: "Goat", type: "definition" }
+        { text: "Booba ", type: "source" },
+        { text: "au ", type: "indicateur" },
+        { text: "Brésil?", type: "source" },
+        { text: " Goat", type: "definition" }
     ],
 
     // 5. Les explications pour les boutons d'aide
