@@ -3,25 +3,26 @@
 
 const puzzleDuJour = {
     // 1. La réponse
-    correctAnswser: "TRAVERSE",
+    correctAnswser: "BELIER",
     
     // 2. La longueur (pour affichage)
-    clueLength: "(8)",
+    clueLength: "(6)",
     
     // 3. L'explication finale (après avoir trouvé la réponse)
-    finalExplanation: "Il s'agit d'une 'double définition'. La réponse TRAVERSE signifie à la fois 'se dit d'un serpent' (le verbe) et 'un passage' (une traverse de chemin de fer, par exemple).",
+    finalExplanation: "Booba, de son prenom ELIE se retrouve au (dans le) Brésil (BR)",
 
     // 4. La structure de l'indice
     clueStructure: [
-        { text: "Se dit d'un serpent", type: "definition" },
-        { text: " et ", type: "neutral" },
-        { text: "un passage", type: "definition" }
+        { text: "Booba", type: "source" },
+        { text: "au", type: "indicateur" },
+        { text: "Brésil", type: "source" },
+        { text: "Goat", type: "definition" }
     ],
 
     // 5. Les explications pour les boutons d'aide
     hintExplanations: {
-        definition: "C'est une 'double définition'. Les deux parties de l'indice (en vert) définissent le même mot.",
-        source: "Il n'y a pas de 'source' (fourrage) dans ce type d'indice, car ce n'est pas une anagramme ou une charade.",
-        indicator: "Il n'y a pas d'indicateur dans ce type d'indice. La structure 'A et B' suggère une double définition."
+        definition: "Goat est ici la définition, mais probablement pas dans le sens de Greatest Of All Time",
+        source: "Il faut substituer un des mots et prendre une abréviation de l'autre",
+        indicator: "L'indicateur 'au' indique que certaines lettres seront à placer à l'intérieur des autres"
     }
 };
