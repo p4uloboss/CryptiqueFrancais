@@ -14,7 +14,7 @@ const puzzleDuJour = {
     // 4. La structure de l'indice
     clueStructure: [
         { text: "Booba ", type: "source" },
-        { text: "au ", type: "indicateur" },
+        { text: "au ", type: "indicator" },
         { text: "Brésil?", type: "source" },
         { text: " Goat", type: "definition" }
     ],
